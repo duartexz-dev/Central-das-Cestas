@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Central das Cestas | Economia e Qualidade para sua Família</title>
+    <meta name="description"
+        content="As melhores cestas básicas, empresariais e kits de limpeza. Compre online e receba rápido.">
+    <meta property="og:title" content="Central das Cestas | Compre Online">
+    <meta property="og:description" content="Cestas básicas de alta qualidade com os melhores preços.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="menu-toggle" class="sr-only" aria-hidden="true">
+    <input type="checkbox" id="cart-toggle" class="sr-only" aria-hidden="true">
+
+    <input type="checkbox" id="modal-produto" class="sr-only" aria-hidden="true">
+    <input type="checkbox" id="modal-checkout" class="sr-only" aria-hidden="true">
+
+    <label for="menu-toggle" class="overlay menu-overlay"></label>
+    <label for="cart-toggle" class="overlay cart-overlay"></label>
+
+    <label for="modal-produto" class="overlay modal-overlay"></label>
+    <label for="modal-checkout" class="overlay modal-overlay"></label>
+
+    <header class="header">
+        <div class="container header__inner">
+
+            <label for="menu-toggle" class="header__icon-btn" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <a href="/" class="logo">
+                <i class="fa-solid fa-basket-shopping logo__icon"></i>
+                <span class="logo__text">CENTRAL<span class="logo__highlight">CESTAS</span></span>
+            </a>
+
+            <div class="header__actions">
+                <label for="cart-toggle" class="header__icon-btn cart-btn" aria-label="Carrinho">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge">2</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="container header__search-container">
+            <div class="search-bar">
+                <input type="text" class="search-bar__input" placeholder="Buscar cestas, produtos..."
+                    aria-label="Pesquisar">
+                <button class="search-bar__btn" aria-label="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <aside class="drawer left-drawer">
+        <div class="drawer__header">
+            <span class="drawer__title"><i class="fa-solid fa-bars"></i> Menu</span>
+            <label for="menu-toggle" class="drawer__close"><i class="fa-solid fa-xmark"></i></label>
+        </div>
+        <nav class="drawer__nav">
+            <a href="#mais-vendidos" class="drawer__link">Mais Vendidos</a>
+            <a href="#kits" class="drawer__link">Kits</a>
+            <a href="#promocoes" class="drawer__link">Promoções</a>
+            <a href="#menu-completo" class="drawer__link">Menu Completo</a>
+            <a href="#whatsapp" class="drawer__link whatsapp-link"><i class="fa-brands fa-whatsapp"></i> Atendimento via
+                WhatsApp</a>
+        </nav>
+    </aside>
+
+    <aside class="drawer right-drawer">
+        <div class="drawer__header">
+            <span class="drawer__title"><i class="fa-solid fa-cart-shopping"></i> Seu Carrinho</span>
+            <label for="cart-toggle" class="drawer__close"><i class="fa-solid fa-xmark"></i></label>
+        </div>
+        <div class="drawer__content cart-sidebar">
+            <div class="cart-item">
+                <div class="cart-item__img"></div>
+                <div class="cart-item__info">
+                    <h4>Cesta Básica Ouro</h4>
+                    <span class="cart-item__price">R$ 299,90</span>
+                    <div class="cart-item__qtd">Qtd: 1</div>
+                </div>
+            </div>
+        </div>
+        <div class="drawer__footer cart-summary">
+            <div class="cart-summary__line">
+                <span>Subtotal</span>
+                <span>R$ 299,90</span>
+            </div>
+            <div class="cart-summary__line">
+                <span>Taxa de entrega</span>
+                <span>R$ 15,00</span>
+            </div>
+            <div class="cart-summary__total">
+                <span>Total</span>
+                <span>R$ 314,90</span>
+            </div>
+            <label for="modal-checkout" class="btn btn--whatsapp btn--block btn--lg">
+                <i class="fa-brands fa-whatsapp"></i> Finalizar pelo WhatsApp
+            </label>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <section class="hero">
+            <div class="container hero__content">
+                <h1 class="hero__title">A Cesta Básica da sua Família.</h1>
+                <p class="hero__subtitle">Economia, qualidade e praticidade em um só lugar.</p>
+                <a href="#menu-completo" class="btn btn--primary btn--lg hero__btn">
+                    <i class="fa-solid fa-basket-shopping"></i> Ver Menu Completo
+                </a>
+            </div>
+        </section>
+
+        <section class="categories container section-padding">
+            <div class="categories__grid">
+                <a href="#mais-vendidos" class="category-card">
+                    <i class="fa-solid fa-fire category-card__icon"></i>
+                    <span>Mais Vendidos</span>
+                </a>
+                <a href="#kits" class="category-card">
+                    <i class="fa-solid fa-box-open category-card__icon"></i>
+                    <span>Kits</span>
+                </a>
+                <a href="#promocoes" class="category-card">
+                    <i class="fa-solid fa-tag category-card__icon"></i>
+                    <span>Promoções</span>
+                </a>
+                <a href="#menu-completo" class="category-card">
+                    <i class="fa-solid fa-list-ul category-card__icon"></i>
+                    <span>Menu Completo</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="mais-vendidos" class="products-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mais Vendidos</h2>
+                </div>
+                <div class="product-grid" id="grid-Destaques">
+
+                </div>
+            </div>
+        </section>
+        <section id="promocoes" class="products-section section-padding" style="background-color: var(--color-white);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Kits</h2>
+                </div>
+                <div class="product-grid" id="grid-kits">
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="menu-completo" class="products-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Menu Completo</h2>
+                </div>
+                <div class="product-grid" id="grid-produtos">
+
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="footer__brand">
+                <div class="logo">
+                    <i class="fa-solid fa-basket-shopping logo__icon"></i>
+                    <span class="logo__text">CENTRAL<span class="logo__highlight">CESTAS</span></span>
+                </div>
+                <p>O maior e-commerce de cestas básicas.</p>
+                <div class="footer__social">
+                    <a href="#ig" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#fb" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <h4>Atendimento</h4>
+                <a href="#faq">Dúvidas Frequentes</a>
+                <a href="#frete">Política de Frete</a>
+                <a href="#devolucao">Trocas e Devoluções</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Central das Cestas. CNPJ: 00.000.000/0001-00.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal" id="modal-checkout-box">
+        <div class="modal__header">
+            <h3>Finalizar Pedido</h3>
+            <label for="modal-checkout" class="modal__close"><i class="fa-solid fa-xmark"></i></label>
+        </div>
+        <div class="modal__body">
+            <form class="checkout-form">
+                <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="text" class="form-control" placeholder="Ex: João da Silva">
+                </div>
+                <div class="form-group">
+                    <label>Telefone / WhatsApp</label>
+                    <input type="tel" class="form-control" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>CEP</label>
+                        <input type="text" class="form-control" placeholder="00000-000">
+                    </div>
+                    <div class="form-group">
+                        <label>Estado</label>
+                        <input type="text" class="form-control" placeholder="Ex: SP">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Rua</label>
+                    <input type="text" class="form-control" placeholder="Nome da rua ou avenida">
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Número</label>
+                        <input type="text" class="form-control" placeholder="Ex: 123">
+                    </div>
+                    <div class="form-group">
+                        <label>Complemento</label>
+                        <input type="text" class="form-control" placeholder="Apto, Casa">
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Bairro</label>
+                        <input type="text" class="form-control" placeholder="Seu bairro">
+                    </div>
+                    <div class="form-group">
+                        <label>Cidade</label>
+                        <input type="text" class="form-control" placeholder="Sua cidade">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Forma de Pagamento</label>
+                    <select class="form-control">
+                        <option>Pix (Ganhe desconto)</option>
+                        <option>Cartão de Crédito</option>
+                        <option>Dinheiro no ato da entrega</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Observações</label>
+                    <textarea class="form-control" rows="2" placeholder="Ex: Deixar na portaria..."></textarea>
+                </div>
+
+                <div class="checkout-summary">
+                    <p><strong>Resumo do Pedido</strong></p>
+                    <div class="checkout-summary__line">
+                        <span>1x Cesta Básica Premium Ouro</span>
+                        <span>R$ 299,90</span>
+                    </div>
+                    <div class="checkout-summary__line">
+                        <span>Taxa de entrega</span>
+                        <span>R$ 15,00</span>
+                    </div>
+                    <div class="checkout-summary__total">
+                        <span>Total</span>
+                        <span>R$ 314,90</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal__footer modal__footer--grid">
+            <label for="modal-checkout" class="btn btn--outline">Cancelar</label>
+            <a href="#enviar-whatsapp" class="btn btn--whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Enviar Pedido
+            </a>
+        </div>
+    </div>
+    <script src="./js/Home.js"></script>
+</body>
+
+</html>
